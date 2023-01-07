@@ -3,13 +3,13 @@ os: ubuntu
 files:
   - source: /
     destination: /var/0701
-permissions:
-  - object: /var/0701
-    owner: ubuntu
-    group: ubuntu
-    type:
-      - directory
-      - file
+# permissions:
+#   - object: /var/0701
+#     owner: ubuntu
+#     group: ubuntu
+#     type:
+#       - directory
+#       - file
 hooks:
   BeforeInstall:
     - location: scripts/start_server.sh
