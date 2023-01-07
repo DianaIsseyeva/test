@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     name: CI part
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 #       - name: Setup .NET Core
@@ -20,7 +20,7 @@ jobs:
   
   deploy:
     name: CD part
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         app-name: ['newTest']
