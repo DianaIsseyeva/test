@@ -11,6 +11,10 @@ files:
 #       - directory
 #       - file
 hooks:
+  BeforeInstall:
+    - location: scripts/before_server.sh
+      timeout: 300
+      runas: root
   ApplicationStart:
     - location: scripts/start_server.sh
       timeout: 300
