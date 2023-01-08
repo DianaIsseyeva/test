@@ -1,5 +1,2 @@
-#!/bin/bash
-isExistApp = `pgrep httpd`
-if [[ -n  $isExistApp ]]; then
-    service httpd stop        
-fi
+udo docker stop newTest
+sudo docker rm -f newTest
