@@ -1,2 +1,4 @@
 cd /home/ubuntu
-mkdir -p /var/0701
+mkdir var
+cd var
+mkdir 0701
