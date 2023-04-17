@@ -24,7 +24,7 @@ jobs:
     strategy:
       matrix:
         app-name: ['newTest']
-        s3-bucket: ['user-codedeploy3']
+        s3-bucket: ['user-codedeploy5']
         s3-filename: ['develop-aws-codedeploy-${{ github.sha }}']
         deploy-group: ['develop']
     needs: build
