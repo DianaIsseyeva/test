@@ -77,5 +77,5 @@ jobs:
           --deployment-config-name CodeDeployDefault.AllAtOnce \
           --deployment-group-name ${{ matrix.deploy-group }} \
           --file-exists-behavior OVERWRITE \
-          --s5-location bucket=${{ matrix.s5-bucket }},key=${{ matrix.s5-filename }}.zip,bundleType=zip \
+          --s3-location bucket=${{ matrix.s5-bucket }},key=${{ matrix.s5-filename }}.zip,bundleType=zip \
 
